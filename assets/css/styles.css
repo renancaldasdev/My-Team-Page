@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-primary: 'PT Serif', serif;
+  --font-second: 'Poppins', sans-serif;
+  --font-copy: 'Montserrat', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+.container{
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11rem;
+}
+
+header h1{
+  font-family: var(--font-primary);
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.045em;
+}
+
+header h2{
+  font-family: var(--font-second);
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-transform: uppercase;
+}
+
+header p {
+  font-family: var(--font-second);
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  max-width: 44rem;
+  margin-top: 1rem;
+}
+
+main{
+  padding-top: 10rem;
+}
+
+.images-team{
+  display: flex;
+  gap: 17rem;
+}
+
+.images-team--people{
+  position: relative;
+}
+
+
+.images-team--people img{
+  max-width: 23.8rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.images-team p{
+  font-family: var(--font-second);
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.down{
+  padding-top: 8rem;
+}
+.images-team span:nth-child(odd){
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+
+  position: absolute;
+  top: 44px;
+  right: -70px;
+}
+
+.images-team span:nth-child(even){
+  display: block;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+
+  position: absolute;
+  top: 110px;
+  right: -70px;
+}
+
+footer{
+  margin-top: 10rem;
+  padding: 20px 0;
+  text-align: center;
+  font-family: var(--font-copy);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #a9a9a9;
+}
+
+@media(max-width: 400px){
+  .container{
+    padding: 40px 20px;
+  }
+  .images-team{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:40px;
+  }
+
+  .images-team--people img{
+    max-width: 13.8rem;
+  }
+
+  .images-team p{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .images-team span:nth-child(odd){
+    font-size: 1rem;
+    line-height: 1.3rem;
+    top: 40px;
+    right: -55px;
+  }
+  
+  .images-team span:nth-child(even){
+    font-size: 1rem;
+    line-height: 1.3rem;
+    top: 110px;
+    right: -55px;
+  }
+}
